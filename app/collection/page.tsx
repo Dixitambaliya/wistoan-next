@@ -135,8 +135,8 @@ export default function CollectionPage() {
                                     key={option.id}
                                     onClick={() => setActiveFilter(option.id)}
                                     className={`px-5 py-2.5 text-[11px] uppercase tracking-[0.15em] border transition-all duration-300 ${activeFilter === option.id
-                                            ? "bg-white text-black border-white"
-                                            : "bg-transparent text-white/60 border-white/20 hover:border-white/40 hover:text-white"
+                                        ? "bg-white text-black border-white"
+                                        : "bg-transparent text-white/60 border-white/20 hover:border-white/40 hover:text-white"
                                         }`}
                                 >
                                     {option.label}
@@ -198,8 +198,8 @@ export default function CollectionPage() {
                                                 setIsFilterOpen(false);
                                             }}
                                             className={`px-5 py-3 text-left text-[11px] uppercase tracking-[0.15em] transition-all duration-300 ${activeFilter === option.id
-                                                    ? "bg-white/10 text-white"
-                                                    : "text-white/60 hover:text-white"
+                                                ? "bg-white/10 text-white"
+                                                : "text-white/60 hover:text-white"
                                                 }`}
                                         >
                                             {option.label}

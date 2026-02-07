@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { FavoritesProvider } from "@/contexts/FavoritesContext";
+import { Toast } from "@/components/Toast";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LenisProvider } from "@/components/LenisProvider";
@@ -24,9 +26,12 @@ export default function RootLayout({
         <html lang="en" className="dark">
             <body className={`${inter.className} bg-[#050505] text-white antialiased`}>
                 <LenisProvider>
-                    <Header />
-                    <main>{children}</main>
-                    <Footer />
+                    <FavoritesProvider>
+                        <Header />
+                        <main>{children}</main>
+                        <Footer />
+                        <Toast />
+                    </FavoritesProvider>
                 </LenisProvider>
             </body>
         </html>
