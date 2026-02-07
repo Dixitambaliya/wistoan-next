@@ -6,6 +6,8 @@ import Link from "next/link";
 import { WATCHES } from "@/lib/data";
 import { motion, AnimatePresence } from "framer-motion";
 
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER!;
+
 export default function ProductDetailPage() {
     const params = useParams();
     const id = params.id as string;
@@ -73,7 +75,7 @@ export default function ProductDetailPage() {
                                     key={idx}
                                     onClick={() => setActiveImage(img)}
                                     className={`aspect-square rounded-md overflow-hidden border transition
-                    ${activeImage === img
+                        ${activeImage === img
                                             ? "border-amber-500"
                                             : "border-transparent opacity-50 hover:opacity-100"
                                         }`}
@@ -116,9 +118,39 @@ export default function ProductDetailPage() {
                             <Spec label="Water" value={watch.specs.resistance} />
                         </div>
 
-                        <button className="w-full bg-white text-black py-4 rounded-full text-xs font-bold uppercase tracking-[0.35em] hover:bg-amber-500 transition">
+                        <button
+                            onClick={() => {
+                                const phone = "919427988352";
+
+                                const productUrl = window.location.href; // current page
+                                const imageUrl = watch.mainImage; // your image path
+
+                                const message = `
+    Hi, I'm interested in this watch:
+
+    Name: ${watch.name}
+    Price: ${watch.price}
+
+    View product:
+    ${productUrl}
+
+    Image:
+    ${imageUrl}
+
+    Please share more details.
+    `;
+
+                                const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+                                window.open(url, "_blank");
+                            }}
+                            className="w-full bg-white cursor-pointer text-black py-4 rounded-full text-xs font-bold uppercase tracking-[0.35em] hover:bg-amber-500 transition"
+                        >
                             Inquire for Purchase
                         </button>
+
+
+
                     </motion.div>
                 </div>
             </div>

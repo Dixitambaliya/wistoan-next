@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { WatchCard } from "@/components/WatchCard";
 import { WATCHES } from "@/lib/data";
+import { TopPicks } from "@/components/TopPicks";
 
 export default function Home() {
     const featuredWatches = WATCHES.slice(0, 3);
@@ -22,7 +23,7 @@ export default function Home() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="text-amber-500 text-[10px] uppercase tracking-[0.4em] mb-6"
                     >
-                        Est. 1895
+                        Est. 2000
                     </motion.p>
 
                     <motion.h1
@@ -38,7 +39,7 @@ export default function Home() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
-                        className="text-white/60 text-sm md:text-base max-w-md mx-auto mb-12 leading-relaxed"
+                        className="text-white/90 text-base md:text-lg max-w-lg md:max-w-2xl mx-auto mb-12 leading-relaxed"
                     >
                         Timeless masterpieces crafted with uncompromising precision and heritage.
                     </motion.p>
@@ -69,28 +70,7 @@ export default function Home() {
             </section>
 
             {/* Featured Collection */}
-            <section className="py-32 px-6 md:px-12">
-                <div className="max-w-[1600px] mx-auto">
-                    <div className="flex flex-col md:flex-row justify-between items-end mb-20">
-                        <div>
-                            <p className="text-amber-500 text-[10px] uppercase tracking-[0.4em] mb-4">The Collection</p>
-                            <h2 className="font-serif text-4xl md:text-5xl tracking-wide">Featured Timepieces</h2>
-                        </div>
-                        <Link
-                            href="/collection"
-                            className="mt-6 md:mt-0 text-[10px] uppercase tracking-[0.3em] text-white/50 hover:text-white transition-colors border-b border-white/20 pb-1"
-                        >
-                            View All Models
-                        </Link>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {featuredWatches.map((watch) => (
-                            <WatchCard key={watch.id} watch={watch} />
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <TopPicks />
 
             {/* Heritage Section Preview */}
             <section className="py-32 px-6 md:px-12 bg-neutral-950">
@@ -105,7 +85,7 @@ export default function Home() {
 
                     <div>
                         <p className="text-amber-500 text-[10px] uppercase tracking-[0.4em] mb-6">Our Heritage</p>
-                        <h2 className="font-serif text-4xl md:text-5xl tracking-wide mb-8">129 Years of<br />Excellence</h2>
+                        <h2 className="font-serif text-4xl md:text-5xl tracking-wide mb-8">20 Years of<br />Excellence</h2>
                         <p className="text-white/60 leading-relaxed mb-8 max-w-lg">
                             From our founding in Geneva to the present day, Wistoan has remained dedicated
                             to the art of haute horlogerie. Each timepiece represents generations of
