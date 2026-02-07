@@ -8,6 +8,9 @@ import { LenisProvider } from "@/components/LenisProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+    verification: {
+        google: "f83a350UzGYCGczYcsIrYUqPc5Dux3kJC8cVELbRpKQ",
+    },
     title: "Wistoan | A Legacy on Your Wrist",
     description: "Luxury timepieces crafted with precision and heritage",
 };
