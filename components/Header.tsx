@@ -8,6 +8,8 @@ import { InquiryModal } from "./InquiryModal";
 import { Menu, Heart } from "lucide-react";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { motion, AnimatePresence } from "framer-motion";
+import { TbTrademark } from "react-icons/tb";
+
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,10 +37,13 @@ export function Header() {
                             priority
                             className="grayscale group-hover:grayscale-0 transition-all duration-500"
                         />
-                        <span className="font-serif text-lg tracking-[0.3em] uppercase font-bold">
+
+                        <span className="font-serif text-lg tracking-[0.3em] uppercase font-bold flex items-start gap-1">
                             Wistoan
+                            <TbTrademark className="w-4 h-4 text-white/40 -mt-1" />
                         </span>
                     </Link>
+
 
                     {/* Navigation */}
                     <nav
@@ -47,7 +52,7 @@ export function Header() {
                             md:flex
                             absolute md:static
                             top-full left-0 w-full md:w-auto
-                            bg-black/95 md:bg-transpar  ent
+                            bg-black/95 md:bg-transparent
                             backdrop-blur-md md:backdrop-blur-none
                             border-b md:border-0 border-white/10
                             flex-col md:flex-row

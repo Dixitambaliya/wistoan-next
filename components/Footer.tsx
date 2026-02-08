@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { WATCHES } from "@/lib/data";
+import { TbTrademark } from "react-icons/tb";
 
 export function Footer() {
 
@@ -29,8 +30,9 @@ export function Footer() {
                         priority
                     />
 
-                    <h4 className="font-serif text-lg tracking-[0.2em] uppercase mb-6 ml-2">
+                    <h4 className="font-serif text-lg tracking-[0.2em] uppercase mb-6 ml-2 flex items-start gap-1">
                         Wistoan
+                        <TbTrademark className="w-5 h-5 text-white/40 -mt-1" />
                     </h4>
 
                     <p className="text-white/40 text-sm leading-relaxed">

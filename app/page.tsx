@@ -25,9 +25,6 @@ export default function Home() {
                         xl:bg-size-[1800px]     /* large screens */
                     "
                 />
-
-
-
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black" />
 
                 <div className="relative z-10 text-center px-6">
