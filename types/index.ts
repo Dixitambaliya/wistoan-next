@@ -1,4 +1,5 @@
 export interface Watch {
+  slug: any;
   id: string;
   name: string;
   price: string;
