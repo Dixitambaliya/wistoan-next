@@ -6,12 +6,17 @@ import { Toast } from "@/components/Toast";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LenisProvider } from "@/components/LenisProvider";
+import { RouteLoader } from "@/components/RouteLoader";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     verification: {
         google: "jvBa2V60_h0eHbjjd9CETQTNpfchH4PIhwxNT_KFIP0",
+    },
+    icons: {
+        icon: "/favicon.ico",
     },
     title: "Wistoan | A Legacy on Your Wrist",
     description: "Luxury timepieces crafted with precision and heritage",
@@ -28,6 +33,7 @@ export default function RootLayout({
                 <LenisProvider>
                     <FavoritesProvider>
                         <Header />
+                        <RouteLoader />
                         <main>{children}</main>
                         <Footer />
                         <Toast />

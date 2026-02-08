@@ -13,7 +13,21 @@ export default function Home() {
         <div className="min-h-screen">
             {/* Hero Section */}
             <section className="relative h-screen flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-40" />
+                <div
+                    className="
+                        absolute inset-0 opacity-30
+                        bg-no-repeat bg-center
+                        bg-[url('/logo.png')]
+                        bg-size-[400px]        /* mobile */
+                        sm:bg-size-[650px]     /* small tablets */
+                        md:bg-size-[800px]     /* tablets */
+                        lg:bg-size-[1200px]     /* desktop */
+                        xl:bg-size-[1800px]     /* large screens */
+                    "
+                />
+
+
+
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black" />
 
                 <div className="relative z-10 text-center px-6">

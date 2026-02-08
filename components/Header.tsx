@@ -28,7 +28,7 @@ export function Header() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 group cursor-pointer">
                         <Image
-                            src="/images/hero-bg.jpg"
+                            src="/logo.png"
                             alt="Wistoan Logo"
                             width={40}
                             height={40}
@@ -47,7 +47,7 @@ export function Header() {
                             md:flex
                             absolute md:static
                             top-full left-0 w-full md:w-auto
-                            bg-black/95 md:bg-transparent
+                            bg-black/95 md:bg-transpar  ent
                             backdrop-blur-md md:backdrop-blur-none
                             border-b md:border-0 border-white/10
                             flex-col md:flex-row

@@ -3,6 +3,7 @@
     export const WATCHES: Watch[] = [
         {
             id: 'sovereign-gold',
+            slug: 'sovereign-gold',
             name: 'The Sovereign Gold',
             tagline: 'Timeless Elegance in Every Second',
             description: 'The Sovereign Gold represents the pinnacle of craftsmanship. Featuring a 18k solid gold case and a handcrafted leather strap, this timepiece is more than a watch—it is a legacy. Each movement is hand-assembled over 400 hours by master watchmakers.',
@@ -22,6 +23,7 @@
         },
         {
             id: 'midnight-navigator',
+            slug: 'midnight-navigator',
             name: 'Midnight Navigator',
             tagline: 'Command the Night',
             description: 'Designed for the modern explorer, the Midnight Navigator features a DLC-coated titanium case and a luminova dial that ensures clarity in the deepest darkness. Its GMT function allows you to track multiple time zones with ease.',
@@ -41,6 +43,7 @@
         },
         {
             id: 'heritage-chronograph',
+            slug: 'heritage-chronograph',
             name: 'Heritage Chronograph',
             tagline: 'A Tribute to Racing Excellence',
             description: 'Inspired by the golden era of motor racing, the Heritage Chronograph combines vintage aesthetics with modern performance. The sunburst silver dial and tachymeter bezel reflect a spirit of speed and precision.',
@@ -60,6 +63,7 @@
         },
         {
             id: 'ocean-master',
+            slug: 'ocean-master',
             name: 'Ocean Master Professional',
             tagline: 'Deep Sea Sophistication',
             description: 'The Ocean Master is built for the professional diver who refuses to compromise on style. With a ceramic unidirectional bezel and a helium escape valve, it is as functional as it is beautiful.',
@@ -79,6 +83,7 @@
         },
         {
             id: 'celestial-tourbillon',
+            slug: 'celestial-tourbillon',
             name: 'Celestial Tourbillon',
             tagline: 'Art in Motion',
             description: 'Defying gravity, the Celestial Tourbillon features a skeletonized dial that reveals the mesmerizing dance of its complicated movement. Each piece is a unique mechanical sculpture, limited to only 50 units worldwide.',
@@ -98,6 +103,7 @@
         },
         {
             id: 'urban-minimalist',
+            slug: 'urban-minimalist',
             name: 'Urban Minimalist',
             tagline: 'Essence of Simplicity',
             description: 'Stripping away the excess, the Urban Minimalist celebrates clean lines and perfect proportions. A perfect companion for the corporate board or a casual evening, its ultra-thin profile sits perfectly under any cuff.',

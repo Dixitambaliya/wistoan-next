@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { WATCHES } from "@/lib/data";
 
 export function Footer() {
 
-    /* ✅ dynamically extract unique watch names */
+    /* ✅ dynamically extract unique watch ids */
     const collections = Array.from(
         new Set(WATCHES.map((w) => w.id))
     );
@@ -15,11 +16,23 @@ export function Footer() {
 
             <div className="max-w-[1600px] mx-auto grid md:grid-cols-4 gap-12">
 
-                {/* Brand */}
-                <div>
-                    <h4 className="font-serif text-lg tracking-[0.2em] uppercase mb-6">
+                {/* ================= BRAND ================= */}
+                <div className="flex flex-col">
+
+                    {/* 🔥 Logo added here */}
+                    <Image
+                        src="/logo.png"
+                        alt="Wistoan logo"
+                        width={120}
+                        height={60}
+                        className="mb-5 object-contain"
+                        priority
+                    />
+
+                    <h4 className="font-serif text-lg tracking-[0.2em] uppercase mb-6 ml-2">
                         Wistoan
                     </h4>
+
                     <p className="text-white/40 text-sm leading-relaxed">
                         Crafting precision masterpieces since 1998. A legacy of elegance.
                     </p>
@@ -49,12 +62,11 @@ export function Footer() {
                             );
                         })}
 
-
                     </ul>
                 </div>
 
 
-                {/* Atelier */}
+                {/* ================= ATELIER ================= */}
                 <div>
                     <h5 className="text-[10px] uppercase tracking-[0.3em] text-white/60 mb-6">
                         Atelier
@@ -67,7 +79,7 @@ export function Footer() {
                 </div>
 
 
-                {/* Contact */}
+                {/* ================= CONTACT ================= */}
                 <div>
                     <h5 className="text-[10px] uppercase tracking-[0.3em] text-white/60 mb-6">
                         Contact
@@ -82,7 +94,7 @@ export function Footer() {
             </div>
 
 
-            {/* Bottom bar */}
+            {/* ================= BOTTOM BAR ================= */}
             <div className="max-w-[1600px] mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-[0.2em] text-white/30">
                 <p>&copy; 2024 Dixit Ambaliya. All rights reserved.</p>
 

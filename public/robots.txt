@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://wistoan.vercel.app
+Host: https://wistoanwatch.com
 
 # Sitemaps
-Sitemap: https://wistoan.vercel.app/sitemap.xml
+Sitemap: https://wistoanwatch.com/sitemap.xml
