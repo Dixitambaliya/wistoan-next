@@ -23,7 +23,7 @@ export default function Home() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="text-amber-500 text-[10px] uppercase tracking-[0.4em] mb-6"
                     >
-                        Est. 2000
+                        Est. 1998
                     </motion.p>
 
                     <motion.h1
@@ -39,7 +39,7 @@ export default function Home() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
-                        className="text-white/90 text-base md:text-lg max-w-lg md:max-w-2xl mx-auto mb-12 leading-relaxed"
+                        className="text-amber-500 md:text-lg max-w-lg md:max-w-2xl mx-auto mb-12 leading-relaxed"
                     >
                         Timeless masterpieces crafted with uncompromising precision and heritage.
                     </motion.p>

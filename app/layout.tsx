@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     verification: {
-        google: "gW91aW8q1IvASzDJS1onHL1d_N_mDQ16GP7LSd9bnhc",
+        google: "jvBa2V60_h0eHbjjd9CETQTNpfchH4PIhwxNT_KFIP0",
     },
     title: "Wistoan | A Legacy on Your Wrist",
     description: "Luxury timepieces crafted with precision and heritage",
@@ -37,4 +37,5 @@ export default function RootLayout({
         </html>
     );
 }
+
 

@@ -21,7 +21,7 @@ export function Footer() {
                         Wistoan
                     </h4>
                     <p className="text-white/40 text-sm leading-relaxed">
-                        Crafting precision masterpieces since 2000. A legacy of elegance.
+                        Crafting precision masterpieces since 1998. A legacy of elegance.
                     </p>
                 </div>
 
