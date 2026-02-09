@@ -98,7 +98,7 @@ export function Footer() {
 
             {/* ================= BOTTOM BAR ================= */}
             <div className="max-w-[1600px] mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-[0.2em] text-white/30">
-                <p>&copy; 2024 Dixit Ambaliya. All rights reserved.</p>
+                <p>&copy; 2026 Dixit Ambaliya. All rights reserved.</p>
 
                 <div className="flex gap-8">
                     <a href="#" className="hover:text-white transition-colors cursor-pointer">
